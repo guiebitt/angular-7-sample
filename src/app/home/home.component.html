@@ -1,0 +1,15 @@
+
+<mat-card>
+    
+    <p [innerHTML]="'WelcomeUser' | translate:{value: username}"></p>
+
+    <button mat-button (click)="changePtLang()">
+      Português
+    </button>
+    <button mat-button (click)="changeEnLang()">
+      English
+    </button>
+    <button mat-button (click)="changeEsLang()">
+      Español
+    </button>
+</mat-card>

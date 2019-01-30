@@ -1,0 +1,4 @@
+{
+    "Home": "Inicial",
+    "WelcomeUser": "¡Bienvenido <strong>{{value}}</strong> a aplicación de ejemplo Angular 7!"
+}
