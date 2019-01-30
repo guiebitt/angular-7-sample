@@ -6,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppTranslateService {
 
-  constructor(private translate: TranslateService) { }
+  constructor(public translate: TranslateService) { }
 
   public initializeTranslate() {
 
