@@ -2,10 +2,12 @@
 
 Sample project with Angular 7 and
 - [ngx-translate](https://github.com/ngx-translate/core): The internationalization (i18n) library for Angular
+- [Angular Material](https://material.angular.io/): Material Design components for Angular
 
 # Dependencies
 
 - @angular (~7.2.0)
+- @angular/material (^7.3.0)
 - @ngx-translate (^11.0.1)
 
 # Application Screenshot
