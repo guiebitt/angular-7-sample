@@ -8,9 +8,28 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('title should contain "Welcome" when language is English', () => {
+
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to angular7sample!');
+
+    page.getButton('English').click();
+    expect(page.getTitle()).toContain('Welcome');
+  });
+
+  it('title should contain "¡Bienvenido" when language is Spanish', () => {
+
+    page.navigateTo();
+
+    page.getButton('Español').click();
+    expect(page.getTitle()).toContain('¡Bienvenido');
+  });
+
+  it('title should contain "Bem vindo" when language is Portuguese Brazil', () => {
+
+    page.navigateTo();
+
+    page.getButton('Português').click();
+    expect(page.getTitle()).toContain('Bem vindo');
   });
 
   afterEach(async () => {
